@@ -1,118 +1,145 @@
-/* INDICE DE ESTILOS 
-
-0 Generales/colores
-1. Tipografia
-*/
+/* ÍNDICE DE ESTILOS
+0. Generales / colores
+1. Tipografía
 2. Headers
-/* 0. Generales */ colores */
-3. Enlaces /botones */
-*{ 
-    margin:0;
+3. Enlaces / botones
+4. Áreas destacadas
+*/
+
+/* 0. Generales */
+
+* {
+    margin: 0;
     padding: 0;
-    box-sizing border-box; 
+    box-sizing: border-box;
 }
+
 :root {
-    --color-principal:#6EC9FC;
---color-acento:#F5EC00;
---color-tercer:#BA1B00;
---color-texto :#57817D;
-}
-/*tipografia*/
-.titulo-principal{
-   .bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  color: var(--color-principal);
+    --color-principal: #6EC9FC;
+    --color-acento: #F5EC00;
+    --color-tercer: #BA1B00;
+    --color-texto: #57817D;
 }
 
-}
-.titulo-secundario{
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: 400;
-  font-weight: weight;
-  font-style: normal;
- color var(--color-acento);
+/* 1. Tipografía */
+
+.titulo-principal {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--color-principal);
 }
 
-.parrafo
-    
-{
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: 200;
-  font-weight: <weight>;
-  font-style: normal;
-  color var(--color-texto)
+.titulo-secundario {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-acento);
 }
-#cabezera-principal{
-    padding: 10px 20px 10px 20px;
 
-    .texto-oculto{
-        display: none;
-        opacity: 0;
-        position: absolute;
-    }
+.parrafo {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--color-texto);
 }
-/* 2. Headers/ cabecera */
-#cabecera-principal{
+
+/* Texto oculto */
+
+.texto-oculto {
+    display: none;
+    opacity: 0;
+    position: absolute;
+}
+
+/* 2. Headers / cabecera */
+
+#cabecera-principal {
     background-color: var(--color-principal);
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    /*borde:grosor tipo color;*/
+
+    /* borde: grosor tipo color; */
     border-bottom: 3px solid var(--color-principal);
 }
-/* 3.Enlaces /botones */
-nav[role=navegatiion]{width: 100%;}
-.boton-principal{
-    /*fuente*/
-    font-family: "source sans 3", sans-serif;
+
+/* 3. Enlaces / botones */
+
+nav[role="navigation"] {
+    width: 100%;
+}
+
+.boton-principal {
+    /* Fuente */
+    font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+
     color: var(--color-principal);
     font-size: 10px;
-    /* quito la linea inferior */
+
+    /* Quitar línea inferior */
     text-decoration: none;
-    /* asigno cuerpo por medio de relleno */
-    padding: 8px 15px 8px 15px;
-     /*animo el paso del mouse*/
-    transition: all linear 0.3s ;
-    /* redondear los bordes del boton */
+
+    /* Relleno */
+    padding: 8px 15px;
+
+    /* Animación al pasar el mouse */
+    transition: all linear 0.3s;
+
+    /* Bordes redondeados */
     border-radius: 3px;
 }
-.boton-principal:hover{
-    /*cambio de color*/
+
+.boton-principal:hover {
+    /* Cambio de color */
     background-color: var(--color-acento);
-    /* cambio de color de fuente */
+
+    /* Cambio de color de fuente */
     color: rgb(255, 255, 255);
-    /* cambio de forma de boton */
 }
-/*responsive*/
-@media only screen and (max-width: 600px){
-    /* 2. Headers/ cabecera */
-    #cabecera-principal{
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+
+    /* 2. Headers / cabecera */
+
+    #cabecera-principal {
         flex-direction: column;
         align-items: center;
     }
+
     /* Enlaces y botones */
-    .boton-principal{
+
+    .boton-principal {
         /* Se comporte como bloque */
         display: block;
-        /*ancho*/
+
+        /* Ancho */
         width: 100%;
-        /*margen*/
-        margin: 5px 2% 5px 2%;
-        /* alineo el texto al centro */
+
+        /* Margen */
+        margin: 5px 2%;
+
+        /* Alinear texto al centro */
         text-align: center;
-        /* borde inferior */
+
+        /* Borde inferior */
         border-bottom: 1px solid var(--color-principal);
+    }
 }
 
-/*4. areas destacadas*/
-#areas-destacadas{
+/* 4. Áreas destacadas */
+
+#areas-destacadas {
     display: flex;
     flex-wrap: wrap;
+}
 }
