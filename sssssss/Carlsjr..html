@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carl's Jr. - Taller Integrador UX/UI. Página de aterrizaje desarrollada con HTML5 semántico, CSS3 responsive y la metodología Atomic Design.">
+    <title>Carl's Jr. | Laboratorio UX/UI</title>
+    <!-- Preconexión de Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Enlace al Archivo CSS Separado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         HEADER / NAVBAR (ORGANISMO)
+         ========================================== -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#inicio" class="logo-link" aria-label="Ir al inicio de Carl's Jr.">
+                <span class="logo-star">★</span>
+                <span class="logo-text">Carl's Jr.</span>
+            </a>
+
+            <!-- Navegación por anclas internas -->
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#menu" class="nav-link">Menú</a></li>
+                    <li><a href="#parallax" class="nav-link">Sabor Charbroil</a></li>
+                    <li><a href="#atomic" class="nav-link">Sistema Atomic</a></li>
+                    <li><a href="#contacto" class="nav-link">Pedidos</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contacto" class="btn btn-primary header-cta">Pide Ahora</a>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         CONTENIDO PRINCIPAL (<main>)
+         ========================================== -->
+    <main>
+
+        <!-- SECCIÓN 1: TOP HERO (ORGANISMO) -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="badge badge-accent">100% Black Angus Beef</span>
+                    <h1 class="hero-title">SABOR A LA PARRILLA INDISCUTIBLE</h1>
+                    <p class="hero-subtitle">
+                        Descubre la jugosidad y textura de nuestras famosas hamburguesas preparadas al carbón al instante.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#menu" class="btn btn-primary btn-lg">Ver Menú Completo</a>
+                        <a href="#parallax" class="btn btn-outline btn-lg">Conoce la Técnica</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: MÓDULO DE CARDS - MENÚ (ORGANISMO) -->
+        <section id="menu" class="menu-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Nuestras Especialidades</span>
+                    <h2 class="section-title">MENÚ ESTRELLA</h2>
+                    <p class="section-description">
+                        Selecciona nuestras hamburguesas más emblemáticas elaboradas con ingredientes frescos de la más alta calidad.
+                    </p>
+                </div>
+
+                <!-- Grilla Modular de Tarjetas (Artículos) -->
+                <div class="cards-grid">
+                    
+                    <!-- Tarjeta 1 -->
+                    <article class="card">
+                        <div class="card-image-wrapper">
+                            <span class="card-badge">Más Vendido</span>
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Hamburguesa Famous Star con Queso, con lechuga, tomate, pepinillos y salsa especial" class="card-img" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-category">Hamburguesa de Res</span>
+                            <h3 class="card-title">Famous Star® con Queso</h3>
+                            <p class="card-text">Carne 100% de res a la parrilla, queso americano derretido, lechuga, tomate, cebolla, pepinillos y nuestra salsa especial.</p>
+                            <div class="card-footer">
+                                <span class="card-price">$8.900</span>
+                                <a href="#contacto" class="btn btn-secondary btn-sm">Ordenar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 2 -->
+                    <article class="card">
+                        <div class="card-image-wrapper">
+                            <span class="card-badge">Especialidad</span>
+                            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" alt="Western Bacon Cheeseburger con aros de cebolla crocantes y tocino ahumado" class="card-img" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-category">Hamburguesa de Res</span>
+                            <h3 class="card-title">Western Bacon Cheeseburger®</h3>
+                            <p class="card-text">Carne a la parrilla, tocino crujiente, aros de cebolla empanizados a mano, queso americano y deliciosa salsa BBQ.</p>
+                            <div class="card-footer">
+                                <span class="card-price">$10.500</span>
+                                <a href="#contacto" class="btn btn-secondary btn-sm">Ordenar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 3 -->
+                    <article class="card">
+                        <div class="card-image-wrapper">
+                            <span class="card-badge">Premium</span>
+                            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80" alt="Super Star Double Cheese con doble carne a la parrilla y doble queso derretido" class="card-img" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-category">Doble Carne</span>
+                            <h3 class="card-title">Super Star® Double Cheese</h3>
+                            <p class="card-text">Doble porción de carne 100% de res a la parrilla, doble queso americano, lechuga fresca, tomate y pepinillos.</p>
+                            <div class="card-footer">
+                                <span class="card-price">$12.900</span>
+                                <a href="#contacto" class="btn btn-secondary btn-sm">Ordenar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 4 -->
+                    <article class="card">
+                        <div class="card-image-wrapper">
+                            <span class="card-badge">Pollo</span>
+                            <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=600&q=80" alt="Hand-Breaded Chicken Sandwich con pechuga empanizada crujiente y mayonesa" class="card-img" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <span class="card-category">Pollo Crispy</span>
+                            <h3 class="card-title">Hand-Breaded Chicken</h3>
+                            <p class="card-text">Pechuga de pollo empanizada a mano al momento, crujiente por fuera y jugosa por dentro, con lechuga y mayonesa.</p>
+                            <div class="card-footer">
+                                <span class="card-price">$9.200</span>
+                                <a href="#contacto" class="btn btn-secondary btn-sm">Ordenar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: EFECTO PARALLAX (ASÍNCRONO DE CAPAS) -->
+        <section id="parallax" class="parallax-section">
+            <div class="parallax-overlay"></div>
+            <div class="parallax-content">
+                <span class="parallax-tag">Técnica Charbroiled</span>
+                <h2 class="parallax-title">EL SECRETO DE NUESTRO FUEGO</h2>
+                <p class="parallax-text">
+                    Asamos cada hamburguesa a fuego directo en parrillas abiertas a altas temperaturas. Este proceso sella los jugos naturales y le otorga a la carne ese inigualable sabor ahumado que nos distingue.
+                </p>
+                <a href="#contacto" class="btn btn-primary btn-lg">Pruébalo en Tu Sucursal</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: MÓDULO VISUAL ATOMIC DESIGN (EVALUACIÓN UX/UI) -->
+        <section id="atomic" class="atomic-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Fundamentación Teórica</span>
+                    <h2 class="section-title">SISTEMA DE DISEÑO ATÓMICO</h2>
+                    <p class="section-description">
+                        Estructura modular del sistema visual desarrollado en Figma e implementado en este sitio web.
+                    </p>
+                </div>
+
+                <div class="atomic-grid">
+                    
+                    <!-- Átomos -->
+                    <div class="atomic-card">
+                        <div class="atomic-card-header">
+                            <span class="atomic-step">01</span>
+                            <h3>Átomos</h3>
+                        </div>
+                        <p>Elementos indivisibles que componen la interfaz:</p>
+                        <ul class="atomic-list">
+                            <li><strong>Tokens de Color:</strong> `#FFC72C` (Star Yellow), `#111111` (Charcoal).</li>
+                            <li><strong>Tipografía:</strong> Oswald (Titulares), Inter (Cuerpo).</li>
+                            <li><strong>Botones & Inputs:</strong> Atributos de foco, padding y bordes.</li>
+                        </ul>
+                        <div class="atomic-demo">
+                            <button class="btn btn-primary btn-sm" tabindex="-1">Botón Primario</button>
+                            <span class="badge badge-accent">Átomo Badge</span>
+                        </div>
+                    </div>
+
+                    <!-- Moléculas -->
+                    <div class="atomic-card">
+                        <div class="atomic-card-header">
+                            <span class="atomic-step">02</span>
+                            <h3>Moléculas</h3>
+                        </div>
+                        <p>Grupos de átomos unidos que funcionan como unidades compuestas:</p>
+                        <ul class="atomic-list">
+                            <li><strong>Campos de Formulario:</strong> Label + Input + Mensaje A11y.</li>
+                            <li><strong>Pie de Tarjeta:</strong> Precio + Botón de acción.</li>
+                            <li><strong>Elemento de Navegación:</strong> Icono + Enlace de ancla.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Organismos -->
+                    <div class="atomic-card">
+                        <div class="atomic-card-header">
+                            <span class="atomic-step">03</span>
+                            <h3>Organismos</h3>
+                        </div>
+                        <p>Combinaciones de moléculas que forman secciones complejas:</p>
+                        <ul class="atomic-list">
+                            <li><strong>Header con Nav:</strong> Logo + Menú Anclado + CTA.</li>
+                            <li><strong>Grilla de Menú:</strong> Módulo de tarjetas reutilizables.</li>
+                            <li><strong>Sección Parallax:</strong> Capas visuales asíncronas.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: FORMULARIO DE PEDIDO Y ACCESIBILIDAD (A11Y) -->
+        <section id="contacto" class="contact-section">
+            <div class="section-container">
+                <div class="contact-layout">
+                    
+                    <!-- Columna Formulario -->
+                    <div class="form-wrapper">
+                        <div class="section-header align-left">
+                            <span class="section-tag">Haz tu Pedido</span>
+                            <h2 class="section-title">ORDENA EN LÍNEA</h2>
+                            <p class="section-description">Completa el formulario para procesar tu orden con envío prioritario.</p>
+                        </div>
+
+                        <form action="#" method="POST" class="order-form">
+                            <div class="form-group">
+                                <label for="nombre" class="form-label">Nombre Completo <span class="required">*</span></label>
+                                <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Ej. Ana María Gómez" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="telefono" class="form-label">Teléfono de Contacto <span class="required">*</span></label>
+                                    <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="Ej. +57 300 123 4567" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sucursal" class="form-label">Sucursal Cercana <span class="required">*</span></label>
+                                    <select id="sucursal" name="sucursal" class="form-select" required>
+                                        <option value="">-- Selecciona una sucursal --</option>
+                                        <option value="zona-rosa">Sucursal Zona Rosa</option>
+                                        <option value="centro">Sucursal Centro Histórico</option>
+                                        <option value="norte">Sucursal Unicentro / Norte</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="producto" class="form-label">Hamburguesa Preferida <span class="required">*</span></label>
+                                <select id="producto" name="producto" class="form-select" required>
+                                    <option value="">-- Selecciona tu opción --</option>
+                                    <option value="famous-star">Famous Star® con Queso</option>
+                                    <option value="western-bacon">Western Bacon Cheeseburger®</option>
+                                    <option value="super-star">Super Star® Double Cheese</option>
+                                    <option value="chicken-crispy">Hand-Breaded Chicken</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="notas" class="form-label">Instrucciones Especiales</label>
+                                <textarea id="notas" name="notas" class="form-textarea" rows="3" placeholder="Sin cebolla, aderezo extra, etc."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Confirmar y Procesar Orden</button>
+                        </form>
+                    </div>
+
+                    <!-- Columna Información Secundaria (<aside>) -->
+                    <aside class="info-aside">
+                        <div class="info-box">
+                            <h3>Horarios de Atención</h3>
+                            <p><strong>Lunes a Jueves:</strong> 11:00 AM - 10:00 PM</p>
+                            <p><strong>Viernes y Sábados:</strong> 11:00 AM - 11:30 PM</p>
+                            <p><strong>Domingos:</strong> 11:00 AM - 9:30 PM</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h3>Compromiso de Accesibilidad</h3>
+                            <p>Este sitio web ha sido diseñado siguiendo las pautas de accesibilidad WCAG 2.1 Nivel AA, garantizando alto contraste tipográfico, navegación por teclado e imágenes descriptivas.</p>
+                        </div>
+
+                        <div class="info-box highlight-box">
+                            <h3>Entrega Rápida</h3>
+                            <p>Garantizamos el empaque térmico para mantener la frescura y temperatura ideal de tus alimentos.</p>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================
+         PIE DE PÁGINA (ORGANISMO)
+         ========================================== -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#inicio" class="logo-link">
+                        <span class="logo-star">★</span>
+                        <span class="logo-text">Carl's Jr.</span>
+                    </a>
+                    <p class="footer-about">
+                        Pioneros en hamburguesas a la parrilla desde 1941. Calidad, tamaño y sabor indiscutible.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#menu">Menú Principal</a></li>
+                        <li><a href="#parallax">Sabor Charbroil</a></li>
+                        <li><a href="#atomic">Sistema de Diseño</a></li>
+                        <li><a href="#contacto">Pedidos en Línea</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Proyecto Académico</h4>
+                    <p class="footer-text">
+                        Asignatura: Laboratorio UX/UI<br>
+                        Caso de Estudio: Carl's Jr.<br>
+                        Metodología: Atomic Design & WCAG AA
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Carl's Jr. - Ejercicio Académico Integrador UX/UI.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
